@@ -2,7 +2,7 @@
 # ---------------------------------------------------------------------------- #
 
 # Configuration file for MyStats
-# ScoreboardStats by CzechPMDevs (@VixikCZ)
+# ScoreboardStats by MangoTheDev (@DakerOmar)
 
 # ---------------------------------------------------------------------------- #
 
@@ -64,7 +64,7 @@ prefix: '&5&l[ &r&2MyStats &l&5]'
 # Economy types: EconomyAPI
 # To enable economy type Economy type
 #economy: 'EconomyAPI'
-economy: 'false'
+economy: 'true'
 
 # ---------------------------------------------------------------------------- #
 
@@ -73,7 +73,7 @@ economy: 'false'
 ##
 
 # Enable faction
-factions: 'false'
+factions: 'true'
 
 # ---------------------------------------------------------------------------- #
 
@@ -83,7 +83,7 @@ factions: 'false'
 ##
 
 # Enable pureperms
-ranks: 'false'
+ranks: 'true'
 
 # ---------------------------------------------------------------------------- #
 
@@ -99,6 +99,9 @@ mainFormat:
 cmdFormat:
   - '&5--- == &6[&eMyStats&6] &5== ---'
   - '&9- &3Name: &b%name'
+  - '&9- &3Rank: &b%rank'
+  - '&9- &3Faction: &b%faction'
+  - '&9- &3Money: &b%money'
   - '&9- &3K/D: &b%kills / %deaths'
   - '&9- &3Broken Blocks: &b%broken'
   - '&9- &3Placed Blocks: &b%placed'
