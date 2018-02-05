@@ -22,7 +22,7 @@ class StatsCommand extends Command implements PluginIdentifiableCommand {
      * StatsCommand constructor.
      */
     public function __construct() {
-        parent::__construct("stats", "Displays your stats.", null, ["mystats", "ms"]);
+        parent::__construct("stats", "Displays Your Stats!.", null, ["st", "ms"]);
     }
 
     /**
