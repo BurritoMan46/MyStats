@@ -63,8 +63,8 @@ class MyStats extends PluginBase{
 
     const NAME = "MyStats";
     const VERSION = "1.4.6";
-    const AUTHOR = "VixikCZ";
-    const GITHUB = "https://github.com/CzechPMDevs/MyStats/";
+    const AUTHOR = "MangoTheDev";
+    const GITHUB = "Made For AversionPE";
     const RELEASE = true;
     const PX = "";
 
@@ -92,9 +92,9 @@ class MyStats extends PluginBase{
             $this->isPhar() ? $phar = "Phar" : $phar = "src";
             $this->getLogger()->info("\n".
                 "§c--------------------------------\n".
-                "§6§lCzechPMDevs §r§e>>> §bMyStatsd\n".
+                "§6§lMangoTheDev §r§e>>> §bMyStatsd\n".
                 "§o§9The most customizable HUD plugin.\n".
-                "§aAuthors: §7VixikCZ\n".
+                "§aAuthors: §7MangoTheDev\n".
                 "§aVersion: §7".$this->getDescription()->getVersion()."\n".
                 "§aStatus: §7Loading...\n".
                 "§c--------------------------------");
@@ -155,7 +155,7 @@ class MyStats extends PluginBase{
     public function check() {
         if($this->getDescription()->getVersion() != self::VERSION or $this->getDescription()->getName() != self::NAME) {
             $this->getServer()->getPluginManager()->disablePlugin($this);
-            $this->getLogger()->critical("Download plugin from github! (".self::GITHUB."releases)");
+            $this->getLogger()->critical("Download plugin from mangothedev! (".self::GITHUB."releases)");
         }
         if(!self::RELEASE) {
             $this->getLogger()->notice("You are running non-stable version of mystats!");
